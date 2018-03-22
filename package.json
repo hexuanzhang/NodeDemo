@@ -4,7 +4,8 @@
     "description": "node demo",
     "main": "index.js",
     "dependencies": {
-        "express": "4.16.3"
+        "express": "4.16.3",
+        "utility": "1.13.1"
     },
     "devDependencies": {
         "chance": "1.0.13",
