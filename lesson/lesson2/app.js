@@ -1,3 +1,9 @@
+/**
+ * express: http://expressjs.com/
+ *
+ * utility: https://github.com/node-modules/utility
+ */
+
 const express = require('express'),
     utility = require('utility');
 

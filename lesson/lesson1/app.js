@@ -1,3 +1,6 @@
+/**
+ * express: http://expressjs.com/
+ */
 const express = require('express'),
     app = express();
 
