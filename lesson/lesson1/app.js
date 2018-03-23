@@ -1,4 +1,6 @@
 /**
+ * 简单的 express 应用
+ *
  * express: http://expressjs.com/
  */
 const express = require('express'),

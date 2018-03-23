@@ -1,10 +1,14 @@
 /**
+ * 抓取 CNode 首页的所有帖子标题和链接
+ *
  * express: http://expressjs.com/
  *
  * superagent: http://visionmedia.github.io/superagent/
  *
  * cheerio: https://github.com/cheeriojs/cheerio
  */
+
+
 
 const express = require('express'),
     superagent = require('superagent'),
