@@ -45,7 +45,7 @@ app.get('/', (req, res, next) => {
                         return {
                             title: $topic('.topic_full_title').text().trim(),
                             href: topicUrls[idx],
-                            firstComment: $comment.length ? $comment.eq(0).text().trim() || '',
+                            firstComment: $comment.length ? $comment.eq(0).text().trim() : '',
                             author: $topic('.user_name').text(),
                             score: $topic('.board .big').text().slice(4).trim()
                         }

@@ -1,11 +1,17 @@
 /**
  * 测试用例
- *  npm i -g mocha
+ *  npm i -g mocha istanbul
  *  npm i -S should
+ *
+ *  eg:
+ *      1.mocha
+ *      2.istanbul cover _mocha
  *
  * mocha: http://mochajs.org/
  *
  * should: https://github.com/tj/should.js
+ *
+ * istanbul: https://github.com/gotwarlost/istanbul
  */
 
 const fibonacci = (n) => {
