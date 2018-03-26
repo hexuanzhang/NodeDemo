@@ -1,3 +1,15 @@
+/**
+ * 使用 async 模块控制并发数
+ *
+ * express: http://expressjs.com/
+ *
+ * superagent: http://visionmedia.github.io/superagent/
+ *
+ * cheerio: https://github.com/cheeriojs/cheerio
+ *
+ * async: http://caolan.github.io/async/docs.html
+ */
+
 const Async = require('async'),
     Express = require('express'),
     Superagent = require('superagent'),
