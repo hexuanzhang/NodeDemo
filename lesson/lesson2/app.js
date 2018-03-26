@@ -6,10 +6,10 @@
  * utility: https://github.com/node-modules/utility
  */
 
-const express = require('express'),
-    utility = require('utility');
+const Express = require('express'),
+    Utility = require('utility');
 
-const app = express();
+const app = Express();
 
 app.get('/', (req, res) => {
     const query = req.query,
@@ -21,7 +21,7 @@ app.get('/', (req, res) => {
         const method = query.method || 'md5', // 加密方法（md5, sha1, sha256）
             format = query.format || 'base64'; // 输出字符串格式（hex、base64）
 
-        res.send(utility.hash(method, query.name, format));
+        res.send(Utility.hash(method, query.name, format));
     }
 });
 

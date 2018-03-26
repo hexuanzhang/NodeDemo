@@ -10,18 +10,18 @@
 
 
 
-const express = require('express'),
-    superagent = require('superagent'),
-    cheerio = require('cheerio');
+const Express = require('express'),
+    Superagent = require('superagent'),
+    Cheerio = require('cheerio');
 
-const app = express();
+const app = Express();
 
 app.get('/', (req, res, next) => {
     const cnodeUrl = 'https://cnodejs.org/';
 
     console.time('start');
-    superagent.get(cnodeUrl).then(_res => {
-        const $ = cheerio.load(_res.text);
+    Superagent.get(cnodeUrl).then(_res => {
+        const $ = Cheerio.load(_res.text);
 
         let items = [];
         $('#topic_list .topic_title').each((idx, ele) => {

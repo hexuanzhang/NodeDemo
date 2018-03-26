@@ -3,8 +3,8 @@
  *
  * express: http://expressjs.com/
  */
-const express = require('express'),
-    app = express();
+const Express = require('express'),
+    app = Express();
 
 app.get('/', (req, res) => {
     res.send('Hello World.');
