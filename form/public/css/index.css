@@ -1,0 +1,13 @@
+body {
+    text-align: center;
+}
+
+section {
+    padding: 20px;
+    width: 500px;
+    display: inline-block;
+}
+
+.rtl {
+    direction: rtl;
+}

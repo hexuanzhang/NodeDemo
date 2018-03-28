@@ -11,6 +11,8 @@ const Express = require('express'),
 
 const app = Express();
 
+app.use(Express.static('/resources/libs'));
+
 app.get('/', (req, res) => {
     const query = req.query,
         keys = Object.keys(query);
