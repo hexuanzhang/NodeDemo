@@ -1,3 +1,5 @@
+const request = window.superagent;
+
 $('.btn').on('click', (event) => {
     const name = $.trim($('#userName').val()),
         email = $.trim($('#email').val()),
@@ -14,7 +16,8 @@ $('.btn').on('click', (event) => {
             data = JSON.stringify(data);
             break;
         case 'formData':
-            contentType = false;
+            contentType = "multipart/form-data";
+            // contentType = false;
             processData = false;
             data = new FormData();
             data.append('name', name);
@@ -23,17 +26,26 @@ $('.btn').on('click', (event) => {
         default:
     }
 
-    $.ajax({
-        method: 'post',
-        url,
-        contentType,
-        processData,
-        data
-    }).done((msg) => {
-        console.info(msg);
-    }).fail((err) => {
-        console.error(err);
-    }).always(() => {
+    request.post(url)
+        // .set('content-type', contentType)
+        .send(data)
+        .then(() => {
+            console.info('superagent success');
+        }).catch((error) => {
+            console.error(error);
+        });
 
-    });
+    // $.ajax({
+    //     method: 'post',
+    //     url,
+    //     contentType,
+    //     processData,
+    //     data
+    // }).done((msg) => {
+    //     console.info(msg);
+    // }).fail((err) => {
+    //     console.error(err);
+    // }).always(() => {
+
+    // });
 });
