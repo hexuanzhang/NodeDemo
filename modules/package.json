@@ -1,0 +1,14 @@
+{
+  "name": "modules",
+  "version": "1.0.0",
+  "description": "node 模块分析学习",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "zhx",
+  "license": "ISC",
+  "dependencies": {
+    "is-odd": "2.0.0"
+  }
+}
