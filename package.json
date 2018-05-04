@@ -17,6 +17,7 @@
   "devDependencies": {
     "bootstrap": "4.0.0",
     "chance": "1.0.13",
+    "figlet": "^1.2.0",
     "gulp": "3.9.1",
     "jquery": "^3.3.1",
     "merge-stream": "^1.0.1",
